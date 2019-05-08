@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Maxim Ditenberg](https://up.htmlacademy.ru/htmlcss/25/user/1052739).
-* Наставник: `Неизвестно`.
+* Наставник: [Илья Туров](https://up.htmlacademy.ru/htmlcss/25/user/240222).
 
 ---
 
