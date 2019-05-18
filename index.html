@@ -22,7 +22,6 @@
       <div class="intro">
         <img class="intro-text" src=img/welcome.png width="459px" height="353" alt="Welcome to the Sedona">
       </div>
-      <!--Правильно что обе картинки завернул в этот ДИВ?-->
       <section class="reasons">
       <h1 class="reasons-title">Седона - небольшой городок в Аризоне, заслуживающий большего</h1>
       <p class="reasons-desctription">Рассмотрим 5 причин, по которым седона круче, чем гранд Каньон!</p>
@@ -85,11 +84,30 @@
         <b class="appointment-head">Заинтересовались?</b>
         <p class="appointment-text">Укажите предпологаемые даты поездки, и мы покажем Вам лучшие предложения гостиниц в Седоне</p>
           <button class="appointment-box-head" type="button">Поиск гостиницы в Седоне</button>
-          <form></form>
+          <form class="appintment-form" method="post">
+            <p class="arrival-item">
+              <label for="arrival-date">Дата заезда</label>
+              <input type="date" id="arrival-date" name="name-arrival-date" placeholder="24 апреля 2017">
+            </p>
+            <p class="departure-item">
+              <label for="departure-date">Дата выезда</label>
+              <input type="date" id="departure-date" name="name-departure-date" placeholder="4 июля 2017">
+            </p>
+            <p class="adult-item">
+              <label for="adult-nubmer">Взрослые</label>
+              <input type="nubmer" id="adult-nubmer" name="name-adult-number" placeholder="2">
+            </p>
+            <p class="child-item">
+              <label for="child-nubmer">Дети</labe>
+              <input type="nubmer" id="child-nubmer" name="name-child-nubmer" placeholder="0">
+            </p>
+            <button class="button" type="submit">Найти</button>
+          </form>
         <div class="map">
           <img class="map-image" src="img/map.png" width="1200px" height="594" alt="Месторасположение отелей">
         </div>
       </section>
+
     </main>
 
     <footer class="footer footer-main">

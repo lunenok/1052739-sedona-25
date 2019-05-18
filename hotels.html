@@ -20,18 +20,56 @@
     </header>
     <main>
       <div class="form-container">
-        <form></form>
+        <form>
+
+          <fieldset class="infrastructure-block">
+            <legend>Инфраструктура:</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="checkbox" class="filter-input" id="filter-swimming-pool" name="name-swimming-pool">
+                <label for="filter-swimming-pool">Бассейн</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" class="filter-input" id="filter-parking" name="name-parking">
+                <label for="filter-parking">Парковка</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" class="filter-input" id="filter-wifi" name="name-wifi">
+                <label for="filter-wifi">Wi-Fi</label>
+              </li>
+            </ul>
+          </fieldset>
+
+          <fieldset class="hotels-type-block">
+            <legend>Тип жилья:</legend>
+            <ul class="filter-list">
+              <li class="filter-item">
+                <input type="checkbox" class="filter-input" id="filter-hotel" name="name-hotel">
+                <label for="filter-hotel">Гостиница</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" class="filter-input" id="filter-motel" name="name-motel">
+                <label for="filter-motel">Мотель</label>
+              </li>
+              <li class="filter-item">
+                <input type="checkbox" class="filter-input" id="filter-apartments" name="name-apartments">
+                <label for="filter-apartments">Апартаменты</label>
+              </li>
+            </ul>
+          </fieldset>
+
+        </form>
       </div>
-      <div class="sort">
+      <div class="sort-block">
         <span class="found">Найдено: 3</span>
-        <span class="filter">Сортировка</span>
-        <ul class="filter-list">
-          <li class="filter-list"><a class="filtr-link">По цене</a></li>
-          <li class="filter-list"><a class="filtr-link">По типу</a></li>
-          <li class="filter-list"><a class="filtr-link">По рейтингу</a></li>
-        <ul>
-        <a class="filter-type" href="#"></a>
-        <a class="filter-type" href="#"></a>
+        <span class="sort">Сортировка</span>
+        <ul class="sort-list">
+          <li class="sort-list"><a class="sort-link">По цене</a></li>
+          <li class="sort-list"><a class="sort-link">По типу</a></li>
+          <li class="soft-list"><a class="sort-link">По рейтингу</a></li>
+        </ul>
+        <a class="sort-type" href="#"></a>
+        <a class="sort-type" href="#"></a>
       </div>
 
       <ul class="search-result-list">
