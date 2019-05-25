@@ -1,0 +1,245 @@
+body {
+    margin: 0;
+    padding: 0;
+
+    font-family: 'PT Sans', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    text-transform: uppercase;
+
+    
+    background-color: #f2f2f2;    
+}
+
+main {
+    background-color: #f2f2f2;
+}
+
+main p {
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav {
+    background-color: #ffffff;
+}
+
+.nav-list {
+    list-style: none;
+    line-height: 26px;
+}
+
+.nav-list li a {
+    color: #000000;
+}
+
+.nav-list a:hover {
+    color: #81b3d2;
+}
+
+.nav-list a:active {
+    color: #b7b7b7;
+}
+
+h1 {
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    color: #333333;
+}
+
+.reasons-item h2 {
+    font-size: 21px;
+    line-height: 21px;
+    color: #ffffff;
+}
+
+.reasons-item-bottom h2 {
+    color: #000000;
+}
+
+.reasons-3-4-5 {
+    background-color:#ffffff;
+}
+
+h3 {
+    font-size: 21px;
+}
+.reasons-item {
+    text-align: center;
+}
+
+.reasons-list,
+.advantages,
+.filter-list {
+    list-style: none;
+}
+
+.reason {
+    background-color:#81b3d2;
+    color:#ffffff;
+}
+
+.appointment-section {
+    background-color: #ffffff;
+}
+
+.appointment-button {
+    font-size: 21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #766357;
+    border: 0;
+}
+
+.appointment-button:hover {
+    background-color: #604e43;
+}
+
+.appointment-button:active {
+    background-color: #503e33;
+} 
+
+.appointment-form {
+    background-color: #ffffff;
+}
+
+.appointment-form label {
+    font-weight: 700;
+    color: #000000;
+}
+
+.input-date,
+.input-count {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #000000;
+
+    background-color: #f2f2f2;
+}
+
+.input-date:hover,
+.input-count:hover {
+    background-color: #ebebeb;
+}
+
+.input-date:focus,
+.input-count:focus {
+    background-color: #ffffff;
+}
+
+.find-button {
+    text-transform: uppercase;
+    font-size: 21px;
+    font-weight: 700;
+    color: #ffffff;
+
+    text-align: center;
+    border: 0;
+
+    background-color: #81b3d2;
+}
+
+.find-button:hover {
+    background-color: #669ec0;
+}
+
+.find-button:active {
+    background-color: #5496bd;
+}
+
+.appointment-head {
+ font-size: 30px;
+ font-weight: 700;
+ line-height: 36px;   
+}
+
+.footer {
+    background-color: white;
+}
+
+.footer > a {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+
+    text-decoration: none;
+}
+
+.more-button {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 700;
+    color: #ffffff;
+
+    text-align: center;
+    border: 0;
+
+    background-color: #81b3d2;
+}
+
+.more-button:hover {
+    background-color: #669ec0;
+}
+
+.more-button:active {
+    background-color: #5496bd;
+}
+
+.book-button {
+    font-size: 14px;
+    line-height:21px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+
+    background-color: #766357;
+    border: 0;
+}
+
+.book-button:hover {
+    background-color: #604e43;
+}
+
+.book-button:active {
+    background-color: #503e33;
+} 
+
+.form-container {
+    background-color: #676e76;
+    background-image: url("img/background-photo.jpg");
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+fieldset {
+    border: 0;
+    color: white;
+}
+
+legend {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
+
+.search-result-list,
+.sort-block {
+    background-color: white;
+}
+
+.hotel-info h2 {
+    font-size: 21px;
+    line-height: 26p;
+    font-weight: 700;
+    color: #000000;
+}
