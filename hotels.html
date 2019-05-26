@@ -4,10 +4,11 @@
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link href="css/normolize.css" rel="stylesheet">
-    <link href="css/stylesheet.css" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page">
+  <div class="wrapper">
     <header class="header">
       <nav class="nav">
         <a class="header-logo" href="index.html">
@@ -26,7 +27,7 @@
         <form>
 
           <fieldset class="infrastructure-block">
-            <legend>Инфраструктура:</legend>
+            <legend class="filter-legend">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <input type="checkbox" class="filter-input" id="filter-swimming-pool" name="name-swimming-pool">
@@ -44,7 +45,7 @@
           </fieldset>
 
           <fieldset class="hotels-type-block">
-            <legend>Тип жилья:</legend>
+            <legend class="filter-legend">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <input type="checkbox" class="filter-input" id="filter-hotel" name="name-hotel">
@@ -69,9 +70,9 @@
         <span class="found">Найдено: 3</span>
         <span class="sort">Сортировка</span>
         <ul class="sort-list">
-          <li class="sort-list"><a class="sort-link">По цене</a></li>
-          <li class="sort-list"><a class="sort-link">По типу</a></li>
-          <li class="soft-list"><a class="sort-link">По рейтингу</a></li>
+          <li class="sort-item"><a class="sort-link" href="#">По цене</a></li>
+          <li class="sort-item"><a class="sort-link" href="#">По типу</a></li>
+          <li class="soft-item"><a class="sort-link" href="#">По рейтингу</a></li>
         </ul>
         <a class="sort-type" href="#"></a>
         <a class="sort-type" href="#"></a>
@@ -81,7 +82,7 @@
         <li class="search-result-item">
           <img src="img/amara-resort-and-spa.jpg" width="135" height="90" alt="Amara resort & spa">
           <div class="hotel-info">
-            <h2>Amara resort & spa</h2>
+            <h2 class="hotel-name">Amara resort & spa</h2>
             <div class="hotel-type-price">
               <span>Гостиница</span>
               <span>от 4000 р.</span>
@@ -100,7 +101,7 @@
         <li class="search-result-item">
           <img src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail INN">
           <div class="hotel-info">
-            <h2>Desert Quail INN</h2>
+            <h2 class="hotel-name">Desert Quail INN</h2>
             <div class="hotel-type-price">
               <span>Мотель</span>
               <span>от 3000 р.</span>
@@ -119,7 +120,7 @@
         <li class="search-result-item">
           <img src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
           <div class="hotel-info">
-            <h2>Villas At Poco Diablo</h2>
+            <h2 class="hotel-name">Villas At Poco Diablo</h2>
             <div class="hotel-type-price">
               <span>Апартаменты</span>
               <span>от 2000 р.</span>
@@ -149,5 +150,6 @@
         <a class="footer-link" href="#"><img src="img/svg-sedona/logo-htmlacademy.svg" width="115" height="41" alt="htmlacademy.ru"></a>
       </div>
     </footer>
+  </div>
   </body>
 </html>
