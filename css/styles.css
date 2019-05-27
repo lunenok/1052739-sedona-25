@@ -72,15 +72,23 @@ html {
 }
 
 .intro {
-  background-image: url("img/background-photo.jpg");
-  background-color: #30414d;
+  background-image: url("/Users/maksimditenberg/Documents/GitHub/1052739-sedona-25/img/background-photo.jpg");
+  background-repeat: no-repeat;
+  padding-top: 61px;
 }
+
+/* Есть вопрос по размерам фоновой картинки, спрошу когда созвонися. Комменчу чтобы не забыть. */
 
 .intro-text {
   display: block;
-  margin-top: 61px;
+  margin-top: 0px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.introduction-container {
+  min-height: 216px;
+  text-align: center;
 }
 
 .reason-title {
@@ -107,6 +115,7 @@ html {
 
 .reason {
   background-color: #81b3d2;
+  text-align: center;
 }
 
 .reason-title {
@@ -137,7 +146,8 @@ html {
 .advantages {
   margin: 0;
   padding: 0;
-  list-style: none; 
+  list-style: none;
+  text-align: center;
 }
 
 .advantage-title {
@@ -188,7 +198,7 @@ html {
 
 .appointment-button {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 568px;
   height: 86px;
@@ -483,4 +493,62 @@ html {
 
 .book-button:active {
   background-color: #503e33;
+}
+
+.first-reason-container {
+  display: flex;
+}
+
+.advantages {
+  display: flex;
+  min-height: 330px;
+  justify-content: space-around;
+}
+
+.second-reason-container {
+  display: flex;
+}
+
+.second-reason-container img {
+  order: -1;
+}
+
+.reasons-item-bottom {
+  width: 304px;
+}
+
+.reasons-3-4-5 {
+  display:flex;
+  justify-content: space-around;
+  min-height: 256px;
+  text-align: center;
+}
+
+.appointment-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 290px;
+}
+
+.appointment-button {
+  margin-top:auto;
+}
+
+.appointment-form {
+  display: block;
+  position: relative;
+  width: 568px;
+  height: 395px;
+  margin: 0 auto;
+}
+
+.map-image {
+  margin-top: -395px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-around;
+  min-height: 120px;
 }
