@@ -320,10 +320,13 @@ html {
   list-style: none;
 }
 
-.form-container {
+.filter-form {
   background-color: #85a4c3;
-  color: #eeeeee;
+  background-image: url("/Users/maksimditenberg/Documents/GitHub/1052739-sedona-25/img/background-photo.jpg");
+  color: #ffffff;
 }
+
+/* Чтобы сделать фон размытым его наверно следует задать через псевдоэлемент, не получилось. */
 
 .filter-list {
   margin: 0;
@@ -551,4 +554,64 @@ html {
   display: flex;
   justify-content: space-around;
   min-height: 120px;
+}
+
+/* Макросетка второй страницы */
+
+.filter-form {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  min-height: 217px;
+}
+
+.infrastructure-block {
+  margin-left: 73px;
+}
+
+.filter-button {
+  margin-right: 170px;
+}
+
+.hotels-type-block {
+  margin-right: 30%;
+}
+
+/* Этот элемент не понял как выровнять нормально по макету. Пока "на глаз". */
+
+.sort-block {
+  display: flex;
+  margin-left: 43px;
+  
+}
+
+.search-result-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-result-item {
+  display: flex;
+  justify-content: flex-start;
+  min-height: 152px;
+  border: 1px solid #e5e5e5;
+}
+
+.search-result-item:nth-child(1),
+.search-result-item:nth-child(2){
+  margin-bottom: -1px;
+}
+
+.result-hotel-photo {
+  margin-left: 73px;
+}
+
+.hotel-rating {
+  margin-left: auto;
+  margin-right: 73px;
+}
+
+.hotel-info {
+  align-content: flex-start;
+  margin-left: 30px;
 }
