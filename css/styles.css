@@ -11,14 +11,14 @@ html {
 .page {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", Arial, sans-serif;
+  font-family: "PT Sans", "Arial", "sans-serif";
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  }
+}
 
 .wrapper {
   width: 1200px;
@@ -63,21 +63,22 @@ html {
   color: #000000;
 }
 
-.nav-list a:hover {
+.nav-link:hover {
   color: #81b3d2;
 }
 
-.nav-list a:active {
+.nav-link:active {
   color: #b7b7b7;
 }
 
 .intro {
-  background-image: url("/Users/maksimditenberg/Documents/GitHub/1052739-sedona-25/img/background-photo.jpg");
+  background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
+  background-position-x: 0;
+  background-position-y: -55px;
   padding-top: 61px;
+  padding-bottom: 144px;
 }
-
-/* Есть вопрос по размерам фоновой картинки, спрошу когда созвонися. Комменчу чтобы не забыть. */
 
 .intro-text {
   display: block;
@@ -91,20 +92,25 @@ html {
   text-align: center;
 }
 
-.reason-title {
+.reasons-title {
   margin: 0;
+  margin-top: 64px;
   padding: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+  text-align: center;
   color: #000000;
 }
 
 .reasons-desctription {
   margin: 0;
+  margin-top: 39px;
+  margin-bottom: 57px;
   padding: 0;
   font-size: 14px;
   line-height: 26px;
+  text-align: center;
 }
 
 .reasons-list {
@@ -113,21 +119,30 @@ html {
   list-style: none;
 }
 
-.reason {
+.reasons-top {
+  padding-top: 50px;
+  padding-left: 60px;
+  padding-right: 60px;
+  padding-bottom: 30px;
   background-color: #81b3d2;
   text-align: center;
 }
 
-.reason-title {
-  margin: 0;
+/* padding-bottom: 30px; для переполнения. Как понять правильное значение для padding? */
+
+.reasons-title-top {
+  margin: 0 auto;
+  margin-bottom: 26px;
   padding: 0;
+  width: 150px;
   font-size: 21px;
   font-weight: 700;
   line-height: 26px;
+  text-align: center;
   color: #ffffff;
 }
 
-.reason-nubmer {
+.reasons-nubmer-top {
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -135,8 +150,9 @@ html {
   color: #ffffff;
 }
 
-.reason-desk {
+.reasons-desk-top {
   margin: 0;
+  margin-top: 30px;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
@@ -159,40 +175,46 @@ html {
 }
 
 .advantage-desk {
+  margin: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   color: #333333;
 }
 
-.reasons-3-4-5 {
+.reasons-bottom {
   background-color: #eeeeee;
 }
 
-.reason-title-3-4-5 {
+.reasons-title-bottom {
+  margin: 0;
   color: #000000;
 }
 
-.reason-nubmer-3-4-5 {
+.reasons-nubmer-bottom {
   color: #333333;
 }
 
-.reason-desk-3-4-5 {
+.reasons-desk-bottom {
+  margin: 0;
   color: #333333;
 }
 
 .appointment-head {
   margin: 0;
+  margin-bottom: 35px;
   padding: 0;
   font-size: 30px;
   font-weight: 700;
-  line-height: 36p;x
+  line-height: 36px;
 }
 
 .appointment-text {
+  margin: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
+  text-align: center;
   color: #333333;
 }
 
@@ -283,7 +305,7 @@ html {
 
 .find-button {
   display: block;
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   width: 458px;
   height: 58px;
@@ -322,11 +344,9 @@ html {
 
 .filter-form {
   background-color: #85a4c3;
-  background-image: url("/Users/maksimditenberg/Documents/GitHub/1052739-sedona-25/img/background-photo.jpg");
+  background-image: url("../img/filter-background.jpg");
   color: #ffffff;
 }
-
-/* Чтобы сделать фон размытым его наверно следует задать через псевдоэлемент, не получилось. */
 
 .filter-list {
   margin: 0;
@@ -339,11 +359,11 @@ html {
   font-weight: 700;
 }
 
-.infrastructure-block {
+.infrastructure-container {
   border: none;
 }
 
-.hotels-type-block {
+.hotels-type-container {
   border: none;
 }
 
@@ -374,15 +394,15 @@ html {
 }
 
 .sort {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-size: 12px;
   line-height: 18px;
 }
 
 .sort-list {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -403,7 +423,7 @@ html {
   color: #000000;
 }
 
-.search-result-list {
+.result-list {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -433,22 +453,7 @@ html {
   color: #333333;
 }
 
-.more-button {
-  display: block;
-  margin: 0;
-  padding: 0;
-  width: 110px;
-  height: 27px;
-  border: none;
-  font-size: 14px;
-  line-height: 21px;
-  text-transform: uppercase;
-  font-weight: 700;
-  color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.more-button {
+.btn-more {
   display: block;
   margin: 0;
   padding: 0;
@@ -465,15 +470,15 @@ html {
   background-color: #81b3d2;
 }
 
-.more-button:hover {
+.btn-more:hover {
   background-color: #669ec0;
 }
 
-.more-button:active {
+.btn-more:active {
   background-color: #5496bd;
 }
 
-.book-button {
+.btn-book {
   display: block;
   margin: 0;
   padding: 0;
@@ -490,16 +495,17 @@ html {
   background-color: #766357;
 }
 
-.book-button:hover {
+.btn-book:hover {
   background-color: #604e43;
 }
 
-.book-button:active {
+.btn-book:active {
   background-color: #503e33;
 }
 
 .first-reason-container {
   display: flex;
+  background-color: #81b3d2;
 }
 
 .advantages {
@@ -510,6 +516,7 @@ html {
 
 .second-reason-container {
   display: flex;
+  background-color: #81b3d2;
 }
 
 .second-reason-container img {
@@ -520,7 +527,7 @@ html {
   width: 304px;
 }
 
-.reasons-3-4-5 {
+.reasons-bottom {
   display:flex;
   justify-content: space-around;
   min-height: 256px;
@@ -538,68 +545,82 @@ html {
   margin-top:auto;
 }
 
+.map {
+  position: relative;
+}
+
 .appointment-form {
   display: block;
-  position: relative;
-  width: 568px;
-  height: 395px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%);
   margin: 0 auto;
+  width: 568px;
+  min-height: 395px;
 }
 
-.map-image {
-  margin-top: -395px;
-}
-
-.footer {
+.main-footer {
   display: flex;
-  justify-content: space-around;
-  min-height: 120px;
+  position: relative;
+  margin-top: -85px;
+  justify-content: space-between;
+  padding-left: 130px;
+  padding-right: 100px;
+  padding-top: 35px;
+  background-color: rgba(255,255,255,0.9);
 }
 
-/* Макросетка второй страницы */
+.hotel-footer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 130px;
+  padding-right: 100px;
+  padding-top: 35px;
+  background-color: rgba(255,255,255,0);
+}
 
 .filter-form {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
   min-height: 217px;
+  padding-left: 73px;
+  padding-right: 73px;
+  padding-top: 39px;
 }
 
-.infrastructure-block {
-  margin-left: 73px;
+.infrastructure-container {
+  margin: 0;
+  margin-right: 73px;
+  padding: 0;
 }
 
-.filter-button {
-  margin-right: 170px;
+.hotels-type-container {
+  margin: 0;
+  margin-right: auto;
+  padding: 0;
 }
 
-.hotels-type-block {
-  margin-right: 30%;
-}
-
-/* Этот элемент не понял как выровнять нормально по макету. Пока "на глаз". */
-
-.sort-block {
+.sort-container {
   display: flex;
   margin-left: 43px;
   
 }
 
-.search-result-list {
+.result-list {
   display: flex;
   flex-direction: column;
 }
 
-.search-result-item {
+.result-item {
   display: flex;
   justify-content: flex-start;
   min-height: 152px;
-  border: 1px solid #e5e5e5;
+  border-top: 1px solid #e5e5e5;
 }
 
-.search-result-item:nth-child(1),
-.search-result-item:nth-child(2){
-  margin-bottom: -1px;
+.result-item:last-child {
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .result-hotel-photo {

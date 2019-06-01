@@ -24,7 +24,7 @@
     </header>
     <main>
         <form class="filter-form">
-          <fieldset class="infrastructure-block">
+          <fieldset class="infrastructure-container">
             <legend class="filter-legend">Инфраструктура:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -42,7 +42,7 @@
             </ul>
           </fieldset>
 
-          <fieldset class="hotels-type-block">
+          <fieldset class="hotels-type-container">
             <legend class="filter-legend">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
@@ -63,8 +63,8 @@
             Показать
           </button>
         </form>
-      <div class="sort-block">
-        <span class="found">Найдено: 3</span>
+      <div class="sort-container">
+        <span class="found">Найдено: <output>3</output></span>
         <span class="sort">Сортировка</span>
         <ul class="sort-list">
           <li class="sort-item"><a class="sort-link" href="#">По цене</a></li>
@@ -75,8 +75,8 @@
         <a class="sort-type" href="#"></a>
       </div>
 
-      <ul class="search-result-list">
-        <li class="search-result-item">
+      <ul class="result-list">
+        <li class="result-item">
           <img class="result-hotel-photo" src="img/amara-resort-and-spa.jpg" width="135" height="90" alt="Amara resort & spa">
           <div class="hotel-info">
             <h2 class="hotel-name">Amara resort & spa</h2>
@@ -85,8 +85,8 @@
               <span>от 4000 р.</span>
             </div>
             <div class="hotel-buttons-container">
-              <a class="more-button" href="desctription.html">Подробнее</a>
-              <a class="book-button" href="tobook.html">Забронировать</a>
+              <a class="btn-more" href="desctription.html">Подробнее</a>
+              <a class="btn-book" href="tobook.html">Забронировать</a>
             </div>
           </div>
           <div class="hotel-rating">
@@ -95,7 +95,7 @@
           </div>
         </li>
 
-        <li class="search-result-item">
+        <li class="result-item">
           <img class="result-hotel-photo" src="img/desert-quail-inn.jpg" width="135" height="90" alt="Desert Quail INN">
           <div class="hotel-info">
             <h2 class="hotel-name">Desert Quail INN</h2>
@@ -104,8 +104,8 @@
               <span>от 3000 р.</span>
             </div>
             <div class="hotel-buttons-container">
-              <a class="more-button" href="desctription.html">Подробнее</a>
-              <a class="book-button" href="tobook.html">Забронировать</a>
+              <a class="btn-more" href="desctription.html">Подробнее</a>
+              <a class="btn-book" href="tobook.html">Забронировать</a>
             </div>
           </div>
           <div class="hotel-rating">
@@ -114,7 +114,7 @@
           </div>
         </li>
 
-        <li class="search-result-item">
+        <li class="result-item">
           <img class="result-hotel-photo" src="img/villas-at-poco-diablo.jpg" width="135" height="90" alt="Villas At Poco Diablo">
           <div class="hotel-info">
             <h2 class="hotel-name">Villas At Poco Diablo</h2>
@@ -123,8 +123,8 @@
               <span>от 2000 р.</span>
             </div>
             <div class="hotel-buttons-container">
-              <a class="more-button" href="desctription.html">Подробнее</a>
-              <a class="book-button" href="tobook.html">Забронировать</a>
+              <a class="btn-more" href="desctription.html">Подробнее</a>
+              <a class="btn-book" href="tobook.html">Забронировать</a>
             </div>
           </div>
           <div class="hotel-rating">
@@ -135,7 +135,7 @@
       </ul>
     </main>
 
-    <footer class="footer footer-main">
+    <footer class="footer hotel-footer">
       <a class="hashtag" href="#">#visitsedona</a>
       <ul class="social-list">
         <li class="social-item"><a class="social-button" href="#">Твиттер</a></li>
