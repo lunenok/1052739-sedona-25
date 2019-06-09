@@ -23,27 +23,27 @@
       </nav>
     </header>
     <main>
-        <form class="filter-form">
-          <fieldset class="infrastructure-container">
-            <legend class="filter-legend">Инфраструктура:</legend>
-            <ul class="filter-list">
-              <li class="filter-item">
-                <input type="checkbox" class="filter-input" id="filter-swimming-pool" name="name-swimming-pool">
-                <label for="filter-swimming-pool">Бассейн</label>
-              </li>
-              <li class="filter-item">
-                <input type="checkbox" class="filter-input" id="filter-parking" name="name-parking">
-                <label for="filter-parking">Парковка</label>
-              </li>
-              <li class="filter-item">
-                <input type="checkbox" class="filter-input" id="filter-wifi" name="name-wifi">
-                <label for="filter-wifi">Wi-Fi</label>
-              </li>
-            </ul>
-          </fieldset>
+      <form class="filter-form">
+        <fieldset class="infrastructure-container">
+          <legend class="filter-legend">Инфраструктура:</legend>
+          <ul class="filter-list">
+            <li class="filter-item">
+              <input type="checkbox" class="filter-input" id="filter-swimming-pool" name="name-swimming-pool">
+              <label for="filter-swimming-pool">Бассейн</label>
+            </li>
+            <li class="filter-item">
+               <input type="checkbox" class="filter-input" id="filter-parking" name="name-parking">
+               <label for="filter-parking">Парковка</label>
+            </li>
+            <li class="filter-item">
+              <input type="checkbox" class="filter-input" id="filter-wifi" name="name-wifi">
+              <label for="filter-wifi">Wi-Fi</label>
+            </li>
+          </ul>
+        </fieldset>
 
-          <fieldset class="hotels-type-container">
-            <legend class="filter-legend">Тип жилья:</legend>
+        <fieldset class="hotels-type-container">
+          <legend class="filter-legend">Тип жилья:</legend>
             <ul class="filter-list">
               <li class="filter-item">
                 <input type="checkbox" class="filter-input" id="filter-hotel" name="name-hotel">
@@ -58,10 +58,12 @@
                 <label for="filter-apartments">Апартаменты</label>
               </li>
             </ul>
-          </fieldset>
-          <button type="submit" class="filter-button button">
-            Показать
-          </button>
+        </fieldset>
+        
+        <div class="filter-range">
+          <button class="btn-filter" type="submit">Показать</button>
+        </div>
+      
         </form>
       <div class="sort-container">
         <span class="found">Найдено: <output>3</output></span>

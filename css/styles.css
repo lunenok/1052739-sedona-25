@@ -7,11 +7,25 @@ html {
 *::after {
   box-sizing: inherit;
 }
-  
+
+ 
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .page {
   margin: 0;
   padding: 0;
-  font-family: "PT Sans", "Arial", "sans-serif";
+  font-family: "PT Sans", "Arial", sans-serif;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -72,12 +86,26 @@ html {
 }
 
 .intro {
+  position: relative;
+  padding-top: 76px;
+  padding-bottom: 79px;
+  background-color: #cee5ff;
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position-x: 0;
   background-position-y: -55px;
-  padding-top: 61px;
-  padding-bottom: 144px;
+}
+
+.intro::after {
+  content: "";
+  position: absolute;
+  top: 361px;
+  width: 1200px;
+  height: 60px;
+  transform: translateY(150%);
+  background-image: url("../img/svg-sedona/intro-mask.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
 }
 
 .intro-text {
@@ -92,10 +120,34 @@ html {
   text-align: center;
 }
 
+.reasons-item-bottom:nth-child(1) {
+  width: 210px;
+}
+
+.reasons-item-bottom:nth-child(2) {
+  width: 270px;
+}
+
+.reasons-item-bottom:nth-child(2) .reasons-title-bottom {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
+.reasons-item-bottom:nth-child(3) {
+  width: 250px;
+}
+
+.reasons-item-bottom:nth-child(3) .reasons-title-bottom {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+
 .reasons-title {
   margin: 0;
-  margin-top: 64px;
+  margin-top: 58px;
   padding: 0;
+  padding-left: 380px;
+  padding-right: 380px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -105,8 +157,8 @@ html {
 
 .reasons-desctription {
   margin: 0;
-  margin-top: 39px;
-  margin-bottom: 57px;
+  margin-top: 27px;
+  margin-bottom: 50px;
   padding: 0;
   font-size: 14px;
   line-height: 26px;
@@ -120,24 +172,22 @@ html {
 }
 
 .reasons-top {
-  padding-top: 50px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding-top: 48px;
+  padding-left: 48px;
+  padding-right: 48px;
   padding-bottom: 30px;
   background-color: #81b3d2;
   text-align: center;
 }
 
-/* padding-bottom: 30px; для переполнения. Как понять правильное значение для padding? */
-
 .reasons-title-top {
   margin: 0 auto;
-  margin-bottom: 26px;
+  margin-bottom: 23px;
   padding: 0;
   width: 150px;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  line-height: 21px;
   text-align: center;
   color: #ffffff;
 }
@@ -152,7 +202,7 @@ html {
 
 .reasons-desk-top {
   margin: 0;
-  margin-top: 30px;
+  margin-top: 21px;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
@@ -161,24 +211,57 @@ html {
 
 .advantages {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin: 0;
-  padding: 0;
-  min-height: 330px;
+  padding-top: 161px;
+  padding-left: 50px;
+  padding-right: 50px;
   list-style: none;
   text-align: center;
 }
 
+.advantages-item {
+  width: 300px;
+}
+
 .advantage-title {
+  position: relative;
   margin: 0;
+  margin-bottom: 24px;
   padding: 0;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
 }
 
+.advantage-title::before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 75px;
+  height: 72px;
+  background-image: url("../img/svg-sedona/icon-1.svg");
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.advantage-title-second::before {
+  width: 74px;
+  height:70px;
+  background-image: url("../img/svg-sedona/icon-3.svg");
+}
+
+.advantage-title-third::before {
+  width: 64px;
+  height:76px;
+  background-image: url("../img/svg-sedona/icon-2.svg");
+}
+
 .advantage-desk {
   margin: 0;
+  margin-bottom: 82px;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
@@ -187,14 +270,19 @@ html {
 
 .reasons-bottom {
   display:flex;
-  justify-content: space-around;
-  min-height: 256px;
+  justify-content: space-between;
+  padding-top: 48px;
+  padding-left: 95px;
+  padding-bottom: 64px;
+  padding-right: 74px;
   text-align: center;
   background-color: #eeeeee;
 }
 
 .reasons-title-bottom {
   margin: 0;
+  margin-bottom: 24px;
+  padding: 0;
   color: #000000;
 }
 
@@ -204,7 +292,13 @@ html {
 
 .reasons-desk-bottom {
   margin: 0;
+  margin-top: 20px;
   color: #333333;
+}
+
+.appointment-section {
+  padding-top: 47px;
+  text-align: center;
 }
 
 .appointment-head {
@@ -218,17 +312,17 @@ html {
 
 .appointment-text {
   margin: 0;
+  margin-top: 23px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
-  text-align: center;
   color: #333333;
 }
 
 .appointment-button {
   display: block;
   margin: 0 auto;
-  margin-top: 60px;
+  margin-top: 47px;
   padding: 0;
   width: 568px;
   height: 86px;
@@ -256,23 +350,43 @@ html {
   left: 50%;
   transform: translate(-50%);
   margin: 0 auto;
+  padding-top: 54px;
+  padding-left: 56px;
+  padding-right: 55px;
   width: 568px;
   min-height: 395px;
   background-color: #ffffff;
 }
 
 .arrival-item {
+  display: flex;
+  align-items: center;
+  position: relative;
   margin: 0;
+  margin-bottom: 29px;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
+  min-width: 38px;
   text-transform: uppercase;
   color: #000000;
 }
 
+.arrival-date-label {
+  margin-right: 21px;
+}
+
+.departure-date-label {
+  margin-right: 17px;
+}
+
 .departure-item {
+  display: flex;
+  align-items: center;
+  position: relative;
   margin: 0;
+  margin-bottom: 29px;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
@@ -282,7 +396,11 @@ html {
 }
 
 .adult-item {
+  display: flex;
+  align-items: center;
+  position: relative;
   margin: 0;
+  margin-right: 53px;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
@@ -292,6 +410,9 @@ html {
 }
 
 .child-item {
+  display: flex;
+  align-items: center;
+  position: relative;
   margin: 0;
   padding: 0;
   font-size: 14px;
@@ -301,23 +422,105 @@ html {
   color: #000000;
 }
 
+.adult-item-minus-btn {
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  right: 90px;
+  border: none;
+  background-color: #a9a9a9;
+  font: inherit;
+}
+
+
+.adult-item-plus-btn {
+  position: absolute;
+  width: 14px;
+  height: 3px;
+  right: 14px;
+  border: none;
+  background-color: #a9a9a9;
+  font: inherit;
+}
+
 .input-date {
+  flex-grow: 1;
   margin: 0;
   padding: 0;
+  padding-left: 14px;
+  min-height: 38px;
   font: inherit;
   text-transform: uppercase;
   background-color: #f2f2f2;
   border: none;
 }
 
+.input-date:hover {
+  background-color: #ebebeb;
+}
+
+.input-date:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.arrival-date-btn {
+  position: absolute;
+  right: 2px;
+  top: 7px;
+  border: none;
+  background-color: inherit;
+}
+
+.arrival-date-btn:hover path {
+  fill: black;
+}
+
+.departure-date-btn:hover path {
+  fill: black;
+}
+
+.arrival-date-btn:active path {
+  fill: #81b3d2;
+}
+
+.departure-date-btn:active path {
+  fill: #81b3d2;
+}
+
+.departure-date-btn {
+  position: absolute;
+  right: 2px;
+  top: 7px;
+  border: none;
+  background-color: inherit;
+}
+
+.ppl-count {
+  display: flex;
+  margin-bottom: 55px;
+}
+
+.adult-number-label {
+  margin-right: 41px;
+}
+
+.child-number-label {
+  margin-right: 27px;
+}
+
 .input-count {
   margin: 0;
   padding: 0;
+  min-height: 38px;
+  width: 114px;
   font: inherit;
   text-transform: uppercase; 
+  text-align: center;
   background-color: #f2f2f2; 
   border: none;
 }
+
 
 .find-button {
   display: block;
@@ -344,18 +547,52 @@ html {
 
 .hashtag {
   margin: 0;
+  margin-right: 257px;
+  margin-top: 11px;
   padding: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
   text-decoration: none;
-  color: #000000;
+  color: #000000
 }
 
 .social-list {
+  display: flex;
   margin: 0;
+  margin-right: auto;
   padding: 0;
   list-style: none;
+}
+
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 6px;
+  width: 46px;
+  height: 48px;
+  background-color: #81b3d2;
+}
+
+.social-button:hover {
+  background-color: #669ec0;
+}
+
+.social-button:active {
+  background-color: #5496bd;
+}
+
+.social-button:active path {
+  opacity: 0.3;
+}
+
+.footer-link:hover path {
+  fill: #81b3d2;
+}
+
+.footer-link:active path {
+  fill: #bdbbbc;
 }
 
 .filter-form {
@@ -395,7 +632,7 @@ html {
   border: none;
 }
 
-.filter-button {
+.btn-filter {
   height: 32px;
   width: 133px;
   border: 2px solid #ffffff;
@@ -408,7 +645,7 @@ html {
   color: #ffffff;
 }
 
-.filter-button:hover {
+.btn-filter:hover {
   background-color: #ffffff;
   color: #000000;
 }
@@ -541,18 +778,10 @@ html {
 .second-reason-container {
   display: flex;
   background-color: #81b3d2;
+}
+
+.diablo-bridge-img {
   order: -1;
-}
-
-.reasons-item-bottom {
-  width: 304px;
-}
-
-.appointment-section {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  min-height: 290px;
 }
 
 .map {
@@ -562,11 +791,11 @@ html {
 .main-footer {
   display: flex;
   position: relative;
-  margin-top: -85px;
-  justify-content: space-between;
-  padding-left: 130px;
+  margin-top: -128px;
+  padding-left: 132px;
   padding-right: 100px;
-  padding-top: 35px;
+  padding-top: 36px;;
+  padding-bottom: 38px;
   background-color: rgba(255,255,255,0.9);
 }
 
@@ -577,6 +806,15 @@ html {
   padding-right: 100px;
   padding-top: 35px;
   background-color: rgba(255,255,255,0);
+}
+
+.footer-copyright {
+  display: flex;
+  align-items: center;
+}
+
+.footer-link {
+  margin-left: 10px;
 }
 
 .sort-container {
