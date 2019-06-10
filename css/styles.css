@@ -49,19 +49,19 @@ html {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 
 .nav-list {
   display: flex;
+  text-align: center;
   padding: 0;
   margin: 0;
   list-style: none;
-  padding-top: 15px;
 }
 
 .nav-item {
   width: 20%;
-  text-align: center;
 }
 
 .nav-item:nth-child(2) {
@@ -69,6 +69,9 @@ html {
 }
 
 .nav-link {
+  display: block;
+  padding-top: 15px;
+  padding-bottom: 15px;
   font-size: 14px;
   line-height: 26px;
   font-weight: bold;
@@ -98,7 +101,7 @@ html {
 .intro::after {
   content: "";
   position: absolute;
-  top: 361px;
+  top: 362px;
   width: 1200px;
   height: 60px;
   transform: translateY(150%);
@@ -114,39 +117,15 @@ html {
   margin-right: auto;
 }
 
-.introduction-container {
-  min-height: 216px;
-  text-align: center;
-}
-
-.reasons-item-bottom:nth-child(1) {
-  width: 210px;
-}
-
-.reasons-item-bottom:nth-child(2) {
-  width: 270px;
-}
-
-.reasons-item-bottom:nth-child(2) .reasons-title-bottom {
-  margin-left: 70px;
-  margin-right: 70px;
-}
-
-.reasons-item-bottom:nth-child(3) {
-  width: 250px;
-}
-
-.reasons-item-bottom:nth-child(3) .reasons-title-bottom {
-  margin-left: 70px;
-  margin-right: 70px;
+.reasons {
+  padding-top: 61px;
 }
 
 .reasons-title {
-  margin: 0;
-  margin-top: 58px;
+  margin: 0 auto;
+  margin-bottom: 28px;
   padding: 0;
-  padding-left: 380px;
-  padding-right: 380px;
+  width: 500px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -155,26 +134,32 @@ html {
 }
 
 .reasons-desctription {
-  margin: 0;
-  margin-top: 27px;
+  margin: 0 auto;
   margin-bottom: 50px;
   padding: 0;
+  width: 500px;
   font-size: 14px;
   line-height: 26px;
   text-align: center;
 }
 
 .reasons-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
   padding: 0;
   list-style: none;
 }
 
+.first-reason-container {
+  display: flex;
+  background-color: #81b3d2;
+}
+
 .reasons-top {
   padding-top: 48px;
-  padding-left: 48px;
-  padding-right: 48px;
   padding-bottom: 30px;
+  width: 400px;
   background-color: #81b3d2;
   text-align: center;
 }
@@ -192,7 +177,9 @@ html {
 }
 
 .reasons-nubmer-top {
+  display: block;
   margin: 0;
+  margin-bottom: 21px;
   padding: 0;
   font-size: 14px;
   line-height: 21px;
@@ -200,9 +187,9 @@ html {
 }
 
 .reasons-desk-top {
-  margin: 0;
-  margin-top: 21px;
+  margin: 0 auto;;
   padding: 0;
+  width: 305px;
   font-size: 14px;
   line-height: 21px;
   color: #ffffff;
@@ -212,22 +199,22 @@ html {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding-top: 161px;
-  padding-left: 50px;
-  padding-right: 50px;
+  padding: 0;
   list-style: none;
   text-align: center;
 }
 
 .advantages-item {
-  width: 300px;
+  width: 400px;
+  padding-top: 161px;
 }
 
 .advantage-title {
   position: relative;
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 24px;
   padding: 0;
+  width: 150px;
   font-size: 21px;
   font-weight: 700;
   line-height: 21px;
@@ -253,13 +240,15 @@ html {
 }
 
 .advantage-title-third::before {
+  top: -105px;
   width: 64px;
   height:76px;
   background-image: url("../img/svg-sedona/icon-2.svg");
 }
 
 .advantage-desk {
-  margin: 0;
+  margin: 0 auto;
+  width: 284px;
   margin-bottom: 82px;
   font-size: 14px;
   line-height: 21px;
@@ -267,42 +256,53 @@ html {
   color: #333333;
 }
 
-.reasons-bottom {
-  display:flex;
-  justify-content: space-between;
-  padding-top: 48px;
-  padding-left: 95px;
-  padding-bottom: 64px;
-  padding-right: 74px;
+.second-reason-container {
+  display: flex;
+  background-color: #81b3d2;
+}
+
+.diablo-bridge-img {
+  order: -1;
+}
+
+.reasons-item-bottom {
+  padding-top: 49px;
+  width: 400px;
   text-align: center;
   background-color: #eeeeee;
 }
 
 .reasons-title-bottom {
-  margin: 0;
+  margin: 0 auto;
   margin-bottom: 24px;
+  width: 150px;
   padding: 0;
   color: #000000;
 }
 
 .reasons-nubmer-bottom {
+  display: block;
+  margin-bottom: 20px;
   color: #333333;
 }
 
 .reasons-desk-bottom {
-  margin: 0;
-  margin-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 59px;
+  width: 270px;
   color: #333333;
 }
 
 .appointment-section {
-  padding-top: 47px;
+  padding-top: 52px;
   text-align: center;
 }
 
 .appointment-head {
-  margin: 0;
-  margin-bottom: 35px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 22px;
+  width: 550px;
   padding: 0;
   font-size: 30px;
   font-weight: 700;
@@ -310,8 +310,9 @@ html {
 }
 
 .appointment-text {
-  margin: 0;
-  margin-top: 23px;
+  margin: 0 auto;
+  margin-bottom: 47px;
+  width: 450px;
   font-size: 14px;
   line-height: 24px;
   font-weight: 400;
@@ -321,7 +322,6 @@ html {
 .appointment-button {
   display: block;
   margin: 0 auto;
-  margin-top: 47px;
   padding: 0;
   width: 568px;
   height: 86px;
@@ -767,20 +767,6 @@ html {
 
 .btn-book:active {
   background-color: #503e33;
-}
-
-.first-reason-container {
-  display: flex;
-  background-color: #81b3d2;
-}
-
-.second-reason-container {
-  display: flex;
-  background-color: #81b3d2;
-}
-
-.diablo-bridge-img {
-  order: -1;
 }
 
 .map {
