@@ -371,6 +371,10 @@ html {
   color: #000000;
 }
 
+/*А тут просто не уверен, что сверстал оптимальным способом.
+Мы с тобой по скайпу говорили, что надо использовать justify-content.
+Верно сделал?*/
+
 .arrival-date-label {
   width: 89px;
   margin-right: 22px;
@@ -395,6 +399,10 @@ html {
   text-transform: uppercase;
   color: #000000;
 }
+
+/*А тут просто не уверен, что сверстал оптимальным способом.
+Мы с тобой по скайпу говорили, что надо использовать justify-content.
+Верно сделал?*/
 
 .input-date {
   flex-shrink: 0;
@@ -448,6 +456,10 @@ html {
   justify-content: center;
   margin-bottom: 55px;
 }
+
+/*А тут просто не уверен, что сверстал оптимальным способом.
+Мы с тобой по скайпу говорили, что надо использовать justify-content.
+Верно сделал?*/
 
 .adult-item {
   display: flex;
@@ -869,6 +881,8 @@ html {
   padding-bottom: 29px;
 }
 
+/* Задал padding-bottom или правильнее будет "отпихать" вниз вложенным элементом, использумя margin-bottom?*/
+
 .found {
   margin: 0;
   margin-right: 48px;
@@ -924,6 +938,8 @@ html {
 .soft-type:active path {
   fill: #81b3d2;
 }
+
+/* почему не работает?*/
 
 .result-list {
   display: flex;
@@ -1014,6 +1030,8 @@ html {
   text-align: center;
   background-color: #81b3d2;
 }
+
+/* Как выровнять текст по оси Y?*/
 
 .btn-more:hover {
   background-color: #669ec0;
