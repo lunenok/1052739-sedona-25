@@ -71,8 +71,6 @@ html {
 }
 
 .nav-link {
-  display: block;
-  width: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 14px;
@@ -80,6 +78,10 @@ html {
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+}
+
+.nav-link:not([href]) {
+  color: red;
 }
 
 .nav-item:nth-child(1) .nav-link,
@@ -276,6 +278,11 @@ html {
 
 .diablo-bridge-img {
   order: -1;
+}
+
+.reasons-item {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .reasons-item-bottom {
@@ -944,11 +951,11 @@ html {
   margin-right: 11px;
 }
 
-.soft-type:hover path {
+.sort-type:hover path {
   fill: black;
 }
 
-.soft-type:active path {
+.sort-type:active path {
   fill: #81b3d2;
 }
 
@@ -1111,8 +1118,4 @@ html {
 
 .hotel-footer {
   margin-top: 0;
-}
-
-.test111 {
-
 }
