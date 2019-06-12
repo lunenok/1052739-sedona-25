@@ -61,6 +61,8 @@ html {
 }
 
 .nav-item {
+  display: flex;
+  justify-content: center;
   width: 20%;
 }
 
@@ -70,6 +72,7 @@ html {
 
 .nav-link {
   display: block;
+  width: 100px;
   padding-top: 15px;
   padding-bottom: 15px;
   font-size: 14px;
@@ -77,6 +80,16 @@ html {
   font-weight: bold;
   text-decoration: none;
   color: #000000;
+}
+
+.nav-item:nth-child(1) .nav-link,
+.nav-item:nth-child(2) .nav-link {
+  text-align: left;
+}
+
+.nav-item:nth-child(3) .nav-link,
+.nav-item:nth-child(4) .nav-link { 
+  text-align: right;
 }
 
 .nav-link:hover {
