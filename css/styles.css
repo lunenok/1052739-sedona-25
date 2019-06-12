@@ -7,7 +7,6 @@ html {
 *::after {
   box-sizing: inherit;
 }
-
  
 .visually-hidden:not(:focus):not(:active) {
   position: absolute;
@@ -37,6 +36,7 @@ html {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
   background-color: #ffffff;
 }
 
@@ -350,8 +350,6 @@ html {
   transform: translate(-50%);
   margin: 0 auto;
   padding-top: 54px;
-  padding-left: 56px;
-  padding-right: 55px;
   width: 568px;
   min-height: 395px;
   background-color: #ffffff;
@@ -359,6 +357,7 @@ html {
 
 .arrival-item {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   margin: 0;
@@ -372,16 +371,21 @@ html {
   color: #000000;
 }
 
+/* Зачем тут джустифай контент? */
+
 .arrival-date-label {
-  margin-right: 21px;
+  width: 89px;
+  margin-right: 22px;
 }
 
 .departure-date-label {
-  margin-right: 17px;
+  width: 92px;
+  margin-right: 19px;
 }
 
 .departure-item {
   display: flex;
+  justify-content: center;
   align-items: center;
   position: relative;
   margin: 0;
@@ -392,6 +396,59 @@ html {
   font-weight: 700;
   text-transform: uppercase;
   color: #000000;
+}
+
+.input-date {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0;
+  padding-left: 13px;
+  padding-right: 35px;
+  min-height: 38px;
+  width: 346px;
+  font: inherit;
+  text-transform: uppercase;
+  background-color: #f2f2f2;
+  border: none;
+}
+
+.input-date:hover {
+  background-color: #ebebeb;
+}
+
+.input-date:focus {
+  background-color: #ffffff;
+  border: 2px solid #e5e5e5;
+}
+
+.arrival-date-btn {
+  position: absolute;
+  right: 57px;
+  border: none;
+  background-color: inherit;
+}
+
+.arrival-date-btn:hover path,
+.departure-date-btn:hover path {
+  fill: black;
+}
+
+.arrival-date-btn:active path,
+.departure-date-btn:active path {
+  fill: #81b3d2;
+}
+
+.departure-date-btn {
+  position: absolute;
+  right: 57px;
+  border: none;
+  background-color: inherit;
+}
+
+.ppl-count {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 55px;
 }
 
 .adult-item {
@@ -421,90 +478,13 @@ html {
   color: #000000;
 }
 
-.adult-item-minus-btn {
-  position: absolute;
-  width: 14px;
-  height: 3px;
-  right: 90px;
-  border: none;
-  background-color: #a9a9a9;
-  font: inherit;
-}
-
-
-.adult-item-plus-btn {
-  position: absolute;
-  width: 14px;
-  height: 3px;
-  right: 14px;
-  border: none;
-  background-color: #a9a9a9;
-  font: inherit;
-}
-
-.input-date {
-  flex-grow: 1;
-  margin: 0;
-  padding: 0;
-  padding-left: 14px;
-  min-height: 38px;
-  font: inherit;
-  text-transform: uppercase;
-  background-color: #f2f2f2;
-  border: none;
-}
-
-.input-date:hover {
-  background-color: #ebebeb;
-}
-
-.input-date:focus {
-  background-color: #ffffff;
-  border: 2px solid #e5e5e5;
-}
-
-.arrival-date-btn {
-  position: absolute;
-  right: 2px;
-  top: 7px;
-  border: none;
-  background-color: inherit;
-}
-
-.arrival-date-btn:hover path {
-  fill: black;
-}
-
-.departure-date-btn:hover path {
-  fill: black;
-}
-
-.arrival-date-btn:active path {
-  fill: #81b3d2;
-}
-
-.departure-date-btn:active path {
-  fill: #81b3d2;
-}
-
-.departure-date-btn {
-  position: absolute;
-  right: 2px;
-  top: 7px;
-  border: none;
-  background-color: inherit;
-}
-
-.ppl-count {
-  display: flex;
-  margin-bottom: 55px;
-}
-
 .adult-number-label {
+  width: 70px;
   margin-right: 41px;
 }
 
 .child-number-label {
+  width: 40px;
   margin-right: 27px;
 }
 
@@ -512,7 +492,7 @@ html {
   margin: 0;
   padding: 0;
   min-height: 38px;
-  width: 114px;
+  width: 38px;
   font: inherit;
   text-transform: uppercase; 
   text-align: center;
@@ -520,6 +500,39 @@ html {
   border: none;
 }
 
+.ppl-btn {
+  position: relative;
+  padding: 0;
+  margin: 0;
+  width: 38px;
+  height: 38px;
+  border: none;
+  background-color: #f2f2f2;
+}
+
+.ppl-btn::after,
+.ppl-btn::before {
+  content: " ";
+  position: absolute;
+  left: 14px;
+  width: 11px;
+  height: 3px;
+  background-color: #a9a9a9;
+}
+
+.ppl-btn-plus::after {
+  transform: rotate(90deg);
+}
+
+.ppl-btn:hover::after,
+.ppl-btn:hover::before {
+  background-color: black;
+}
+
+.ppl-btn:active::after,
+.ppl-btn:active::before {
+  background-color: #81b3d2;
+}
 
 .find-button {
   display: block;
@@ -544,11 +557,21 @@ html {
   background-color: #5496bd;
 }
 
+.main-footer {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  min-height: 122px;
+  margin-top: -128px;
+  background-color: rgba(255,255,255,0.9);
+}
+
 .hashtag {
-  margin: 0;
-  margin-right: 257px;
-  margin-top: 11px;
+  display: block;
+  margin: auto 0;
   padding: 0;
+  text-align: center;
+  width: 400px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -558,32 +581,50 @@ html {
 
 .social-list {
   display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 150px;
   margin: 0;
-  margin-right: auto;
   padding: 0;
   list-style: none;
 }
 
-.social-button {
+.social-item {
   display: flex;
   align-items: center;
   justify-content: center;
   margin-right: 6px;
+  margin-bottom: 6px;
   width: 46px;
   height: 48px;
   background-color: #81b3d2;
 }
 
-.social-button:hover {
+.social-item:nth-child(3n) {
+  margin-right: -6px;
+}
+
+.social-item:hover {
   background-color: #669ec0;
 }
 
-.social-button:active {
+.social-item:active {
   background-color: #5496bd;
 }
 
-.social-button:active path {
+.social-item:active path {
   opacity: 0.3;
+}
+
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+
+.footer-link {
+  margin-left: 10px;
 }
 
 .footer-link:hover path {
@@ -773,17 +814,6 @@ html {
   position: relative;
 }
 
-.main-footer {
-  display: flex;
-  position: relative;
-  margin-top: -128px;
-  padding-left: 132px;
-  padding-right: 100px;
-  padding-top: 36px;;
-  padding-bottom: 38px;
-  background-color: rgba(255,255,255,0.9);
-}
-
 .hotel-footer {
   display: flex;
   justify-content: space-between;
@@ -791,15 +821,6 @@ html {
   padding-right: 100px;
   padding-top: 35px;
   background-color: rgba(255,255,255,0);
-}
-
-.footer-copyright {
-  display: flex;
-  align-items: center;
-}
-
-.footer-link {
-  margin-left: 10px;
 }
 
 .sort-container {
