@@ -686,17 +686,6 @@ html {
   overflow: hidden;
 }
 
-.filter-input + label::before {
-  content: "";
-  position: absolute;
-  left: -39px;
-  top: -2px;
-  width: 23px;
-  height: 23px;
-  background-image: url(../img/svg-sedona/checkbox-off.svg);
-  background-repeat: no-repeat;
-}
-
 .filter-input:checked + label::after {
   content: "";
   position: absolute;
@@ -708,10 +697,21 @@ html {
   background-repeat: no-repeat;
 }
 
-/* .filter-input:hover + label::before,
+.filter-input + label::before {
+  content: "";
+  position: absolute;
+  left: -39px;
+  top: -2px;
+  width: 23px;
+  height: 23px;
+  background-image: url(../img/svg-sedona/checkbox-off.svg);
+  background-repeat: no-repeat;
+}
+
+.filter-input:hover + label::before,
 .filter-input:focus + label::before {
-  filter: invert(75%);
-} */
+  filter: drop-shadow(0 0 2px black);
+}
 
 .filter-input:disabled + label::after,
 .filter-input:checked:disabled + label::before,
