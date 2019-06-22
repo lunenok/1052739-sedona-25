@@ -96,7 +96,8 @@ html {
   text-align: right;
 }
 
-.nav-link:hover {
+.nav-link:hover,
+.nav-link:focus  {
   color: #81b3d2;
 }
 
@@ -357,7 +358,8 @@ html {
   background-color: #766357;
 }
 
-.appointment-button:hover {
+.appointment-button:hover,
+.appointment-button:focus {
   background-color: #604e43;
 }
 
@@ -622,7 +624,8 @@ html {
   margin-left: 10px;
 }
 
-.footer-link:hover path {
+.footer-link:hover path,
+.footer-link:focus path {
   fill: #81b3d2;
 }
 
@@ -852,10 +855,12 @@ html {
   background: transparent;
   border: 2px solid #ffffff;
   border-radius: 2px;
+  outline: 0;
   cursor: pointer;
 }
 
-.btn-transparent:hover {
+.btn-transparent:hover,
+.btn-transparent:focus {
   color: #000000;
   background: #ffffff;
 }
@@ -908,7 +913,8 @@ html {
   color: #81b3d2;
 }
 
-.sort-link:hover {
+.sort-link:hover,
+.sort-link:focus {
   color: #81b3d2;
   border-bottom: 1px dashed #81b3d2;
 }
@@ -1037,7 +1043,8 @@ html {
   background-color: #81b3d2;
 }
 
-.btn-more:hover {
+.btn-more:hover,
+.btn-more:focus {
   background-color: #669ec0;
 }
 
@@ -1061,7 +1068,8 @@ html {
   background-color: #766357;
 }
 
-.btn-book:hover {
+.btn-book:hover,
+.btn-book:focus {
   background-color: #604e43;
 }
 
