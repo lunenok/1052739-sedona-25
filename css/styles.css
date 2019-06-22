@@ -503,6 +503,10 @@ html {
   border: 2px solid #f2f2f2;
 }
 
+.input-count::-ms-clear {
+  display:none;
+}
+
 .ppl-btn {
   position: relative;
   padding: 0;
@@ -808,6 +812,10 @@ html {
   line-height: 26px;
   background: none;
   border: none;
+}
+
+.price-controls input:::-ms-clear {
+  display: none;
 }
 
 .range-controls {
