@@ -123,7 +123,7 @@ html {
   width: 1200px;
   height: 60px;
   transform: translateY(150%);
-  background-image: url("../img/svg-sedona/intro-mask.svg");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='59' preserveAspectRatio='none' viewBox='0 0 1200 59'%3E%3Cpath d='M0 57V0l250 24V0l350 57L950 0v24l250-24v57H0z' fill='%23fff'/%3E%3C/svg%3E%0A");
   background-repeat: no-repeat;
   background-position: 0 0;
 }
@@ -365,6 +365,7 @@ html {
 
 .appointment-button:active {
   background-color: #503e33;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .appointment-form {
@@ -542,7 +543,7 @@ html {
 
 .ppl-btn::after,
 .ppl-btn::before {
-  content: " ";
+  content: "";
   position: absolute;
   top: 19px;
   left: 14px;
@@ -589,6 +590,7 @@ html {
 
 .find-button:active {
   background-color: #5496bd;
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .map-yandex {
@@ -890,7 +892,7 @@ html {
 
 .range-toggle::after {
   position: absolute;
-  content: " ";
+  content: "";
   left: -2px;
   top: -2px;
   width: 1px;
@@ -974,22 +976,34 @@ html {
   font-size: 12px;
   line-height: 18px;
   text-decoration: none;
+  border-bottom: 1px dashed #81b3d2;
   color: #000000;
   opacity: 0.3;
 }
 
 .sort-link-active {
   color: #81b3d2;
+  opacity: 1;
+  border-bottom: none;
 }
 
 .sort-link:hover,
 .sort-link:focus {
   color: #81b3d2;
   border-bottom: 1px dashed #81b3d2;
+  opacity: 1;
 }
 
 .sort-link:active {
   color: #000000;
+  border-bottom: none;
+  opacity: 1;
+}
+
+.sort-link-active:hover {
+  color: #81b3d2;
+  opacity: 1;
+  border-bottom: none;
 }
 
 .triangle {
@@ -1119,6 +1133,7 @@ html {
 
 .btn-more:active {
   background-color: #5496bd;
+  color: rgba(255,255,255,0.3);
 }
 
 .btn-book {
@@ -1144,6 +1159,7 @@ html {
 
 .btn-book:active {
   background-color: #503e33;
+  color: rgba(255,255,255,0.3);
 }
 
 .hotel-rating {
