@@ -782,7 +782,6 @@ html {
   background-repeat: no-repeat;
 }
 
-.filter-input:hover + label::after,
 .filter-input:focus + label::after {
   filter: drop-shadow(0 0 2px #0a84ff);
 }
