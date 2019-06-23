@@ -426,13 +426,13 @@ html {
 
 .date-btn {
   position: absolute;
-  top: 0;
+  top: 4px;
   right: 2px;
   border: none;
   outline: none;
   background-color: inherit;
   width: 38px;
-  height: 38px;
+  height: 32px;
   padding: 0;
 }
 
@@ -451,8 +451,6 @@ html {
 
 .input-date:focus + .date-btn {
   background-color: #ffffff;
-  border-top: 2px solid #e5e5e5;
-  border-bottom: 2px solid #e5e5e5;
 }
 
 .ppl-container {
